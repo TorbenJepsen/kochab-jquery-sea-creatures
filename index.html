@@ -7,10 +7,36 @@
     <script src="jquery-3.3.1.js"></script>
     <script src="scripts.js"></script>
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>jQuery Sea Creatures</title>
 </head>
 <body>
     <h1>Sea Creatures</h1>
+    <input type:"text" placeholder="Name" id="newCreatureName"> 
+    <!-- fyi type:"text" isn't needed unless declaring a number field as type:"number", html will default to text -->
+    <input type:"number" placeholder="Size" id="newCreatureSize">
+    <input type:"text" placeholder="Type" id="newCreatureType">
+    <input type:"number" placeholder="Speed" id="newCreatureSpeed">
+    <button id="counterButton">Add Sea Creature</button>
+    <span id="counterClicks">total count</span> 
+    <!-- span for everything on one line, div will create new line -->
     
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Size</th>
+                <th>Type</th>
+                <th>Speed</th>
+            </tr>
+        </thead>
+        <tbody id="creatureList">
+            <tr>
+                <td>Orca</td>
+                <td>30ft</td>
+                <td>Dolphin</td>
+                <td>25 mi</td>
+            </tr>
+         </tbody>
+    </table>
 </body>
 </html>
